@@ -1,0 +1,2 @@
+[console_scripts]
+flight-weather = flight_weather_lakehouse.cli:main

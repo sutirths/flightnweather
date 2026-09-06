@@ -1,0 +1,10 @@
+version: 2
+models:
+  - name: mart_weather_flight_impact
+    description: Hourly adverse-weather exposure by airport, with concurrent OpenSky state-vector volume.
+    columns:
+      - name: airport
+        tests: [not_null]
+      - name: observed_hour
+        tests: [not_null]
+

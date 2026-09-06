@@ -1,0 +1,8 @@
+flight_weather:
+  target: local
+  outputs:
+    local:
+      type: duckdb
+      path: ../data/warehouse/flight_weather.duckdb
+      threads: 4
+

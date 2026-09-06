@@ -1,0 +1,18 @@
+version: 2
+sources:
+  - name: raw
+    schema: main
+    tables:
+      - name: raw_flight_states
+        columns:
+          - name: event_id
+            tests: [unique, not_null]
+          - name: observed_at
+            tests: [not_null]
+      - name: raw_weather_observations
+        columns:
+          - name: event_id
+            tests: [unique, not_null]
+          - name: airport
+            tests: [not_null]
+
